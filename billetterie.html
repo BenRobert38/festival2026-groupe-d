@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billetterie — Festival Horizon 2027</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bandeau d'en-tête de la page Billetterie -->
+  <header class="section-dark billetterie-hero">
+    <div class="container">
+      <p class="billetterie-hero__surtitre">Festival Horizon 2027 · Grenoble · 18 – 20 juin 2027</p>
+      <h1>Billetterie</h1>
+      <p class="billetterie-hero__intro">
+        Un jour, tout le week-end ou en mode VIP : choisis la formule qui te ressemble.
+      </p>
+    </div>
+  </header>
+
+  <main class="container billetterie" id="billets">
+
+    <!-- Les différents billets -->
+    <section class="billetterie-offres">
+      <h2>Les billets</h2>
+
+      <div class="billetterie-grille">
+
+        <article class="card billet">
+          <h3>Pass 1 jour</h3>
+          <p class="billet__dates"><span class="badge">Ven. 18</span> <span class="badge">Sam. 19</span> <span class="badge">Dim. 20</span></p>
+          <p class="billet__prix"><strong>45 €</strong> <span class="billet__unite">/ jour</span></p>
+          <ul class="billet__inclus">
+            <li>Accès aux deux scènes pour la journée choisie</li>
+            <li>Accès à l'espace food &amp; bar</li>
+          </ul>
+          <a class="btn btn-secondary" href="#reservation">Réserver</a>
+        </article>
+
+        <article class="card billet billet--populaire">
+          <p class="billet__etiquette"><span class="badge">Le plus choisi</span></p>
+          <h3>Pass 3 jours</h3>
+          <p class="billet__dates"><span class="badge">18 → 20 juin</span></p>
+          <p class="billet__prix"><strong>110 €</strong> <span class="billet__unite">/ les 3 jours</span></p>
+          <ul class="billet__inclus">
+            <li>Accès aux deux scènes tout le week-end</li>
+            <li>Bracelet nominatif, entrées et sorties illimitées</li>
+            <li>Accès à l'espace food &amp; bar</li>
+          </ul>
+          <a class="btn btn-primary" href="#reservation">Réserver</a>
+        </article>
+
+        <article class="card billet">
+          <h3>Pass VIP</h3>
+          <p class="billet__dates"><span class="badge">18 → 20 juin</span></p>
+          <p class="billet__prix"><strong>220 €</strong> <span class="billet__unite">/ les 3 jours</span></p>
+          <ul class="billet__inclus">
+            <li>Tous les avantages du Pass 3 jours</li>
+            <li>Espace VIP avec vue sur la grande scène</li>
+            <li>Entrée coupe-file et vestiaire offert</li>
+          </ul>
+          <a class="btn btn-secondary" href="#reservation">Réserver</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Tableau récapitulatif des tarifs -->
+    <section class="billetterie-tarifs">
+      <h2>Les tarifs</h2>
+
+      <table class="tarifs">
+        <thead>
+          <tr>
+            <th scope="col">Billet</th>
+            <th scope="col">Plein tarif</th>
+            <th scope="col">Tarif réduit*</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Pass 1 jour</th>
+            <td>45 €</td>
+            <td>35 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Pass 3 jours</th>
+            <td>110 €</td>
+            <td>90 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Pass VIP</th>
+            <td>220 €</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">Enfant (- de 12 ans)</th>
+            <td>Gratuit</td>
+            <td>Gratuit</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="tarifs__note">
+        * Tarif réduit : étudiants, demandeurs d'emploi et moins de 18 ans, sur présentation d'un justificatif à l'entrée.
+      </p>
+    </section>
+
+    <!-- Bouton de réservation -->
+    <section class="section-dark billetterie-reservation" id="reservation">
+      <h2>Prêt·e à vivre Horizon ?</h2>
+      <p>Les places sont limitées : réserve dès maintenant ton billet.</p>
+      <a class="btn btn-primary" href="mailto:billetterie@festival-horizon.fr?subject=R%C3%A9servation%20Festival%20Horizon%202027">Réserver mes billets</a>
+    </section>
+
+  </main>
+
+</body>
+</html>
