@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBES FESTIVAL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101020;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #17172b;
+        }
+
+        header h2 {
+            color: #ffcc00;
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 110px 20px;
+            background: linear-gradient(135deg, #7028e4, #e83e8c);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #ffcc00;
+            color: #101020;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #ffcc00;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .artists {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .artist {
+            background: #22223b;
+            padding: 30px;
+            border-radius: 15px;
+            width: 220px;
+        }
+
+        .artist h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #17172b;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>VIBES FESTIVAL</h2>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#festival">Le festival</a>
+            <a href="#programmation">Programmation</a>
+            <a href="#billets">Billets</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="accueil">
+        <h1>VIBES FESTIVAL 2027</h1>
+        <p>Trois jours de musique, de partage et de bonne humeur !</p>
+        <p>📍 Grenoble | 18 - 20 Juin 2027</p>
+        <br>
+        <a href="#billets" class="btn">Réserver mon billet</a>
+    </section>
+
+    <section class="section" id="festival">
+        <h2>Bienvenue au festival !</h2>
+        <p>
+            Prépare-toi à vivre une expérience inoubliable !
+            Au programme : musique live, artistes talentueux,
+            animations et ambiance festive.
+            Rejoins-nous pour célébrer la musique ensemble !
+        </p>
+    </section>
+
+    <section class="section" id="programmation">
+        <h2>À l'affiche</h2>
+
+        <div class="artists">
+            <div class="artist">
+                <h3>DJ Nova</h3>
+                <p>Vendredi - 20h00</p>
+                <p>Électro / House</p>
+            </div>
+
+            <div class="artist">
+                <h3>Sarah Moon</h3>
+                <p>Samedi - 21h00</p>
+                <p>Pop / R&B</p>
+            </div>
+
+            <div class="artist">
+                <h3>The Waves</h3>
+                <p>Dimanche - 19h00</p>
+                <p>Rock / Indie</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="billets">
+        <h2>Prêt à faire la fête ?</h2>
+        <p>Ne manque pas cette édition exceptionnelle !</p>
+        <br>
+        <a href="mailto:contact@vibesfestival.fr" class="btn">
+            Acheter mon billet
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2027 Vibes Festival - Tous droits réservés</p>
+        <p>Instagram | Facebook | Contact</p>
+    </footer>
+
+</body>
+</html>
