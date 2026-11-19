@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Vibes Festival</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101020;
+            color: white;
+        }
+
+        /* EN-TÊTE */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #17172b;
+        }
+
+        .logo {
+            color: #ffcc00;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* BANNIÈRE */
+        .banner {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #7028e4, #e83e8c);
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        /* SECTION À PROPOS */
+        .about {
+            padding: 70px 10%;
+        }
+
+        .about h2 {
+            text-align: center;
+            color: #ffcc00;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-content img {
+            width: 50%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .description {
+            flex: 1;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .description p {
+            margin-bottom: 20px;
+        }
+
+        /* NOS VALEURS */
+        .values {
+            padding: 60px 10%;
+            background: #17172b;
+            text-align: center;
+        }
+
+        .values h2 {
+            color: #ffcc00;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #292943;
+            padding: 30px;
+            border-radius: 15px;
+            width: 250px;
+        }
+
+        .card h3 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* CHIFFRES CLÉS */
+        .numbers {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            padding: 60px 20px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .numbers h3 {
+            color: #ffcc00;
+            font-size: 35px;
+        }
+
+        .numbers p {
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        /* PIED DE PAGE */
+        footer {
+            background: #17172b;
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-content img {
+                width: 100%;
+            }
+
+            .banner h1 {
+                font-size: 34px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <a href="index.html" class="logo">VIBES FESTIVAL</a>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="programmation.html">Programmation</a>
+            <a href="artistes.html">Artistes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- BANNIÈRE -->
+    <section class="banner">
+        <h1>À PROPOS DE NOUS</h1>
+        <p>La musique nous rassemble, les émotions nous unissent.</p>
+    </section>
+
+
+    <!-- PRÉSENTATION -->
+    <section class="about">
+
+        <h2>Bienvenue au Vibes Festival</h2>
+
+        <div class="about-content">
+
+            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=900"
+                 alt="Concert de musique">
+
+            <div class="description">
+
+                <p>
+                    Vibes Festival est un événement musical organisé
+                    à Grenoble, réunissant des artistes et des passionnés
+                    de musique autour d'une expérience unique.
+                </p>
+
+                <p>
+                    Pendant trois jours, nous proposons des concerts,
+                    des découvertes musicales et des animations dans
+                    une ambiance conviviale et festive.
+                </p>
+
+                <p>
+                    Notre ambition est de créer un espace de rencontre,
+                    de partage et de découverte où chacun peut vivre
+                    pleinement sa passion pour la musique.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOS VALEURS -->
+    <section class="values">
+
+        <h2>Nos valeurs</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎵 Passion</h3>
+                <p>
+                    Faire découvrir différents univers musicaux
+                    et partager notre amour pour la musique.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Partage</h3>
+                <p>
+                    Favoriser les rencontres et créer des moments
+                    inoubliables entre festivaliers.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌍 Diversité</h3>
+                <p>
+                    Mettre en avant des artistes et des styles
+                    musicaux variés.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHIFFRES CLÉS -->
+    <section class="numbers">
+
+        <div>
+            <h3>3</h3>
+            <p>Jours de festival</p>
+        </div>
+
+        <div>
+            <h3>20+</h3>
+            <p>Artistes invités</p>
+        </div>
+
+        <div>
+            <h3>1</h3>
+            <p>Passion commune</p>
+        </div>
+
+    </section>
+
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>© 2027 Vibes Festival - Tous droits réservés</p>
+        <p>Grenoble | France</p>
+    </footer>
+
+</body>
+</html>
